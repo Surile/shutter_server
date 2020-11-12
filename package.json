@@ -1,0 +1,50 @@
+{
+  "name": "shutter_server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "deploy:dev": "tcb framework deploy --mode development",
+    "deploy:stage": "tcb framework deploy --mode staging",
+    "deploy:prod": "tcb framework deploy --mode production"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@cloudbase/node-sdk": "^2.3.5",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.2.0",
+    "moment": "^2.29.1",
+    "morgan": "^1.10.0",
+    "response-time": "^2.3.2",
+    "sha1": "^1.1.1"
+  },
+  "devDependencies": {
+    "@cloudbase/cli": "^1.0.3",
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-config-standard": "^16.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.1.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1",
+    "nodemon": "^2.0.6",
+    "prettier": "^2.1.2"
+  }
+}
