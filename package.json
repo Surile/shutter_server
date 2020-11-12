@@ -4,7 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev":"tcb framework:run shutter_server 'npm run start' --mode development",
     "deploy:dev": "tcb framework deploy --mode development",
     "deploy:stage": "tcb framework deploy --mode staging",
     "deploy:prod": "tcb framework deploy --mode production"
