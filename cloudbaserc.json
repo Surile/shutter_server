@@ -8,10 +8,9 @@
       "node":{
         "use": "@cloudbase/framework-plugin-node",
         "inputs": {
-          "entry": "main.js",
+          "entry": "./src/main.js",
           "name":"shutter_server",
-          "path":"/shutter_server",
-          "projectPath":"./src"
+          "path":"/shutter_server"
         }
       }
     },
