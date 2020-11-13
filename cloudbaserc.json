@@ -10,7 +10,7 @@
         "inputs": {
           "entry": "./src/main.js",
           "name":"shutter_server",
-          "path":"/shutter_server"
+          "path":"/"
         }
       }
     },

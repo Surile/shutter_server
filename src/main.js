@@ -32,4 +32,8 @@ app.use('/user', userRouter)
 // 全局错误处理
 app.use(handleError)
 
+app.listen(3000, () => {
+    console.log('本地运行已开启，端口号为3000')
+})
+
 module.exports = app
